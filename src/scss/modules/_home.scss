@@ -1,0 +1,70 @@
+#home {
+  background-image: url("img/dress-fashion.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+
+  .header h1,
+  p {
+    text-align: center !important;
+  }
+}
+
+#sidebar {
+  height: 100vh;
+  margin-left: 0;
+}
+
+#sidebar .list-group-item {
+  border-radius: 0;
+  background-color: #333;
+  color: #ccc;
+  border-left: 0;
+  border-right: 0;
+  border-color: #2c2c2c;
+  white-space: nowrap;
+  font-size: 0.8em;
+}
+
+#sidebar .list-group-item:not(.collapsed) {
+  background-color: #222;
+}
+
+/* closed state */
+#sidebar .list-group .list-group-item[aria-expanded="false"]::after {
+  content: " \f0d7";
+  display: inline;
+  text-align: center;
+  padding-left: 5px;
+}
+
+/* open state */
+#sidebar .list-group .list-group-item[aria-expanded="true"] {
+  background-color: #222;
+}
+#sidebar .list-group .list-group-item[aria-expanded="true"]::after {
+  content: " \f0da";
+  display: inline;
+  text-align: center;
+  padding-left: 5px;
+}
+
+#explore-header-section {
+  margin-top: 30vh;
+  font-weight: 600;
+  color: #D9F9C3;
+}
+
+#explore-header-section h1 {
+  font-size: 4em;
+}
+
+#explore-header-section p {
+  color: #D9F9C3;
+}
+
+#explore-header-section hr {
+  line-height: 1em;
+  color: #D9F9C3;
+}
